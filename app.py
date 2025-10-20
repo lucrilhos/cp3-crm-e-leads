@@ -6,18 +6,18 @@ def add_flow():
     company = input("Empresa: ").strip()
     email = input("E-mail: ").strip()
     if not name or not email or "@" not in email:
-        print("Nome e e-mail válido são obrigatórios.")
+        print("É necessário um nome e um e-mail válidos.")
         return
 
     lead = Lead(name, company, email)
     print(lead.to_dict())
     repo.add_lead(lead)
-    print("✔ Lead adicionado!")
+    print("Lead adicionada")
 
 def list_flow():
     leads = repo.list_leads()
     if not leads:
-        print("Nenhum lead ainda.")
+        print("Nenhuma lead ainda")
         return
     print("\n# | Nome                 | Empresa            | E-mail")
     print("--+----------------------+-------------------+-----------------------")
@@ -31,7 +31,7 @@ def list_flow():
 def search_flow():
     q = input("Buscar por: ").strip().lower()
     if not q:
-        print("Consulta vazia.")
+        print("Consulta vazia")
         return
     leads = repo.list_leads()
     results = []
@@ -56,7 +56,7 @@ def search_flow():
 def export_flow():
     path = repo.export_csv()
     if path is None:
-        print("Não consegui escrever o CSV. Feche o arquivo se estiver aberto e tente novamente.")
+        print("Não consegui escrever o CSV. feche o arquivo se estiver aberto ou tente novamente")
     else:
         print(f"✔ Exportado para: {path}")
 
