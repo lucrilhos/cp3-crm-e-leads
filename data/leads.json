@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Alexandre",
+    "company": "FIAP",
+    "email": "alexandre@fiap.com",
+    "stage": "novo",
+    "created": "2025-09-28"
+  },
+  {
+    "name": "João",
+    "company": "Alura",
+    "email": "joao@alura.com",
+    "stage": "novo",
+    "created": "2025-10-05"
+  },
+  {
+    "name": "Lucas",
+    "company": "FIAP",
+    "email": "lucas@fiap.com.br",
+    "stage": "novo",
+    "created": "2025-10-20"
+  },
+  {
+    "name": "Lucas Mendes",
+    "company": "Microsoft",
+    "email": "lucrilhos.mendes@microsoft.com",
+    "stage": "novo",
+    "created": "2025-10-20"
+  }
+  ]
